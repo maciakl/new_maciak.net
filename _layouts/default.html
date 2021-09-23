@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Homepage of Luke Maciak"/>
+    <meta name="author" content="Luke Maciak"/>
+    <meta name="google-site-verification" content="Sj4CBaC9bTIMf8EetEF7SD_JZ_yssJtdygaEbQCWOPs" />
+
+
+    <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }} maciak.net</title>
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/icons/bs/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/icons/mfizz/font-mfizz.css">
+
+    <link href="/icons/fa/css/fontawesome.css" rel="stylesheet">
+    <link href="/icons/fa/css/brands.css" rel="stylesheet">
+    <link href="/icons/fa/css/solid.css" rel="stylesheet">
+    <link href="/icons/di/devicon.min.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+    <style>
+
+        .page-header {
+            margin-bottom: 50px;
+        }
+
+        html {
+                position: relative;
+                min-height: 100%;
+                }
+                body {
+                /* Margin bottom by footer height */
+                margin-bottom: 60px;
+                }
+                .footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                /* Set the fixed height of the footer here */
+                height: 60px;
+                line-height: 60px; /* Vertically center the text there */
+                background-color: #f5f5f5;
+            }
+
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+
+  </head>
+  <body>
+    
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">maciak.net</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+        <li class="nav-item"><a class="nav-link {% if page.title == 'Home' %} active {% endif %}" aria-current="page" href="/"><i class="bi bi-house-door"></i> Home</a></li>
+        <li class="nav-item"><a class="nav-link {% if page.title == 'About' %} active {% endif %}" aria-current="page" href="/about/"><i class="bi bi-question-circle"></i> About</a></li>
+        <li class="nav-item"><a class="nav-link  {% if page.title == 'Contact' %} active {% endif %}" aria-current="page" href="/contact/"><i class="bi bi-envelope"></i> Contact</a></li>
+        <li class="nav-item"><a class="nav-link  {% if page.title == 'Payment' %} active {% endif %}" aria-current="page" href="/payment/"><i class="bi bi-cash-coin"></i> Payment</a></li>
+        <li class="nav-item"><a class="nav-link  {% if page.title == 'Interests' %} active {% endif %}" aria-current="page" href="/interests/"><i class="bi bi-lightbulb"></i> Interests</a></li>
+        <li class="nav-item"><a class="nav-link  {% if page.title == 'Projects' %} active {% endif %}" aria-current="page" href="/projects/"><i class="bi bi-archive"></i>  Projects</a></li>
+        <li class="nav-item"><a class="nav-link  {% if page.title == 'Publications' %} active {% endif %}" aria-current="page" href="/publications/"><i class="bi bi-journal"></i> Publications</a></li>
+        <li class="nav-item"><a class="nav-link  {% if page.title == 'Tools' %} active {% endif %}" aria-current="page" href="/tools/"><i class="bi bi-tools"></i> Tools</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+
+    {{ content }}
+
+ 
+</main>
+
+<footer class="footer">
+    <div class="container">
+      <span class="text-muted">&copy; Luke Maciak 2021</span>
+    </div>
+  </footer>
+
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>

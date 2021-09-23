@@ -1,0 +1,22 @@
+title: maciak.net
+description:
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://maciak.net"
+
+twitter_username: LukeMaciak
+github_username:  maciakl
+
+# Build settings
+permalink: pretty
+
+#plugins:
+#  - jekyll-feed
+
+exclude:
+   - .jekyll-cache/
+   - gemfiles/
+   - Gemfile
+   - Gemfile.lock
+   - Makefile
+   - exclude.rsync
+   - Rakefile
